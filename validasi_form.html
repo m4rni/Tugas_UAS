@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Belajar Form</title>
+        <script language="JavaScript" SRC="js/isvalid.js">
+            </script>
+            <script language="JavaScript">
+                function validasi(){
+                    isAlphabet (document.getElementById('nama'), 'Nama\
+                            harus alfabet semua');
+                    isAlphabet (document.getElementById('alamat'), 'Alamat\
+                            hanya boleh alfanumerik');
+                    isAlphabet (document.getElementById('telp'), 'Telepon harus\
+                            angka semua');
+                    isAlphabet (document.getElementById('password'), 'Password\
+                            hanya boleh alfanumerik');
+                } </script>
+    </head>
+    <body>
+        <FORM>
+            <PRE>
+        Silakan masukkan data pribadi anda :
+        Nama :
+<INPUT TYPE=text NAME=txtnama id='nama'>
+alamat :
+<INPUT TYPE=text NAME=txtalamat id='alamat' SIZE=50>
+No Telpon :
+<INPUT TYPE=text NAME=txttelpon id='telp' SIZE=10>
+Masukkan Password Anda :
+<INPUT TYPE=password id='password' MAXLENGTH=6>
+<HR>
+<INPUT TYPE=submit onclick="validasi ()" VALUE=kirim>
+<INPUT TYPE=Reset VALUE=hapus>
+        </FORM>
+    </body>
+</html>
